@@ -1,0 +1,82 @@
+.service-special{
+    width: var(--width-full);
+    border-radius: var(--border-radius-sm);
+    padding: var(--padding-3xl) var(--padding-5xl);
+    background-color: var(--color-white);
+    gap: var(--gap-xl);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-position: bottom right;
+   
+   &:hover{
+     background-image: url('../../../../assets/image/xeyal-3.svg');
+     background-size: 80%;
+     background-repeat: no-repeat;
+     
+     transition: 1s;
+   }
+    .service-img-box{
+
+        .alfa{
+            width: var(--icon-width-4xl);   
+        }
+    }
+
+    .service-cart-text{
+        display:flex;
+        flex-direction: column;
+        gap: var(--gap-md);
+        flex-grow: 1;
+        .cart-tittle{
+            
+            font-size: var(--font-size-3xl);
+            line-height: var(--line-height-h4);
+            font-weight: var(--font-weight-medium);
+        }
+        .cart-text{
+           
+            font-size: var(--font-size-md);
+            color: var(--color-black-overlay);
+        }
+    }
+    .cart-btn-box{
+        width: var(--width-full);
+        display: flex;
+        justify-content: flex-end;
+        .more-btn{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding:var(--padding-button-small);
+         border: 1px solid black;
+         border-radius: var(--border-radius-button);
+         gap: var(--gap-xs);
+         background-color: var(--color-white);
+         cursor: pointer;
+         transition: 0.3s;
+         &:hover{
+         background-color: var(--color-black);
+         color:var(--color-white);
+         }
+      
+        }
+    }
+    
+   
+}
+
+.more-btn{
+    transition: 0.3s;
+  .icon_black{
+    color: black;
+    transform: rotate(325deg);
+    transition: 0.5s;
+  }
+    &:hover{
+        .icon_black{
+            color: white;
+            transform: rotate(360deg);
+        }
+    }
+}

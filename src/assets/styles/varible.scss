@@ -1,0 +1,521 @@
+/* ---------------------------------------------
+    G L O B A L  
+--------------------------------------------- */
+:root {
+   /* ========== COLORS ========== */
+   --color-about: rgba(52, 55, 249, 1);
+   --color-primary: #3472f9;
+   --color-black: #000;
+   --color-black-footer: rgba(0, 0, 0, 1);
+   --color-black-overlay: rgba(0, 0, 0, 0.6);
+   --box-shadow:0px 8px 18px rgba(0, 0, 0, 0.15);
+   --witdh-full:100%;
+   --color-gray-dark: #d5d5d5;
+   --color-gray: #e8e8e8;
+   --color-gray-light: #f7f7fa;
+   --color-gray-stats: #949494;
+   --color-white: #fff;
+   --color-white-overlay: rgba(255, 255, 255, 10);
+
+   /* ================================= */
+
+   /* ========== ASPECT RATIO ========== */
+
+   --aspect-ratio-square: 1/1;
+   --aspect-ratio-portrait: 3/4;
+   --aspect-ratio-landscape: 4/3;
+   --aspect-ratio-wide: 16/9;
+   --aspect-ratio-tall: 9/16;
+
+   /* ================================= */
+
+   /* ========== FONT SIZE ========== */
+
+   --font-size-xs: 6px;
+   --font-size-sm: 10px;
+   --font-size-md: 12px;
+   --font-size-lg: 12px;
+   --font-size-lg-spc:12px;
+   --font-size-xl: 12px;
+   --font-size-2xl: 14px;
+   --font-size-3xl: 18px;
+   --font-size-4xl: 20px;
+   --font-size-5xl: 24px;
+   --font-size-meter: 40px;
+   --font-size-button-small: 10px;
+   --font-size-button-medium: 12px;
+   --font-size-button-big: 14px;
+   --font-size-4-5xl: 30px;
+   /* ============================================ */
+
+   /* ========== FONT WEIGHT ========== */
+
+   --font-weight-thin: 100;
+   --font-weight-extra-light: 200;
+   --font-weight-light: 300;
+   --font-weight-regular: 400;
+   --font-weight-medium: 500;
+   --font-weight-semi-bold: 600;
+   --font-weight-bold: 700;
+   --font-weight-extra-bold: 800;
+   --font-weight-black: 900;
+
+   /* ============================================ */
+
+   /* ========== GAP ========== */
+
+   --gap-auto: auto;
+   --gap-xs: 4px;
+   --gap-sm: 6px;
+   --gap-md: 8px;
+   --gap-lg: 10px;
+   --gap-xl: 14px;
+   --gap-2xl: 18px;
+   --gap-2-5xl: 20px;
+   --gap-3xl: 22px;
+   --gap-4xl: 26px;
+   --gap-5xl: 45px;
+   --gap-card-md: 18px;
+   --gap-card-sm: 8px;
+
+   /* ============================================ */
+
+   /* ========== PADDING ========== */
+
+   --padding-xs: 4px;
+   --padding-sm: 6px;
+   --padding-md: 10px;
+   --padding-lg: 12px;
+   --padding-xl: 14px;
+   --padding-2xl: 16px;
+   --padding-3xl: 18px;
+   --padding-4xl: 20px;
+   --padding-5xl: 22px;
+   --padding-6xl: 26px;
+   --padding-7xl: 32px;
+   --padding-8xl: 45px;
+   --padding-section: 26px;
+   --padding-header: 14px 20px;
+   --padding-section-header: 45px 32px;
+   --padding-circle:9px 11px;
+   --padding-extra-small: 8px 10px;
+   --padding-button-small: 6px 16px;
+   --padding-button-medium: 12px 18px;
+   --padding-input: 12px 18px 12px 36px;
+   --padding-button-big: 8px 24px;
+   --padding-card-big: 18px 26px;
+   --padding-footer-header: 60px 34px;
+   --padding-small-footer:16px 34px;
+   /* ============================================ */
+
+   /* ========== BORDER RADIUS ========== */
+
+   --border-radius-xs: 8px;
+   --border-radius-sm: 12px;
+   --border-radius-md: 14px;
+   --border-radius-filter: 16px;
+   --border-radius-button: 30px;
+   --border-radius-cricle: 50%;
+ --border-radius-input: 65px;
+   /* ============================================ */
+
+
+   /* ==============================
+             W I D T H S 
+   ============================== */
+
+   --width-full: 100%;
+   --width-half: 50%;
+   --max-width-section: 1440px;
+   --width-circle:28px;
+   --width-span-after: 20px;
+
+   /* ---------- LOGO WIDTH ---------- */
+
+   --logo-width-sm: 18px;
+   --logo-width-md: 90px;
+   --logo-width-lg: 115px;
+
+   /* ---------- ICON WIDTH ---------- */
+   --icon-width-xs: 8px;
+   --icon-width-sm: 10px;
+   --icon-width-md: 12px;
+   --icon-width-lg: 14px;
+   --icon-width-xl: 16px;
+   --icon-width-2xl: 20px;
+   --icon-width-3xl: 26px;
+   --icon-width-4xl: 80px;
+
+   /* ============================================ */
+
+
+   /* ==============================
+             L I N E - H E I G H T 
+   ============================== */
+
+   --line-height-h1: 34px;
+   --line-height-h2: 28px;
+   --line-height-h4: 24px;
+   --line-height-description-md: 22px;
+   --line-height-description-lg: 26px;
+
+   /* ============================================ */
+}
+
+
+/* ---------------------------------------------
+            T A B L E T - 768 PX
+--------------------------------------------- */
+@media(min-width:370px) {
+   :root {
+       /* ========== FONT SIZE ========== */
+
+       --font-size-xs: 8px;
+       --font-size-sm: 10px;
+       --font-size-md: 12px;
+       --font-size-lg: 14px;
+       --font-size-lg-spc:12px;
+       --font-size-xl: 16px;
+       --font-size-2xl: 18px;
+       --font-size-3xl: 22px;
+       --font-size-4xl: 24px;
+       --font-size-5xl: 30px;
+       --font-size-meter: 55px;
+       --font-size-button-small: 12px;
+       --font-size-button-medium: 14px;
+       --font-size-button-big: 16px;
+       --font-size-4-5xl: 30px;
+       /* ============================================ */
+
+       /* ========== GAP ========== */
+
+       --gap-auto: auto;
+       --gap-xs: 4px;
+       --gap-sm: 6px;
+       --gap-md: 10px;
+       --gap-lg: 12px;
+       --gap-xl: 20px;
+       --gap-2xl: 24px;
+       --gap-3xl: 32px;
+       --gap-4xl: 34px;
+       --gap-5xl: 64px;
+       --gap-card-md: 20px;
+       --gap-card-sm: 10px;
+       --gap-2-5xl: 20px;
+       /* ============================================ */
+
+       /* ========== PADDING ========== */
+
+       --padding-xs: 6px;
+       --padding-sm: 6px;
+       --padding-md: 12px;
+       --padding-lg: 14px;
+       --padding-xl: 16px;
+       --padding-2xl: 18px;
+       --padding-3xl: 20px;
+       --padding-4xl: 22px;
+       --padding-5xl: 24px;
+       --padding-6xl: 28px;
+       --padding-7xl: 40px;
+       --padding-8xl: 60px;
+       --padding-section: 46px;
+       --padding-header: 34px 16px;
+       --padding-section-header: 34px 60px;
+       --padding-extra-small: 8px 10px;
+       --padding-button-small: 6px 16px;
+       --padding-button-medium: 12px 18px;
+       --padding-input: 12px 18px 12px 36px;
+       --padding-button-big: 8px 24px;
+       --padding-card-big: 18px 26px;
+       --padding-small-footer:16px 34px;
+       --padding-footer-header: 60px 34px;
+       --padding-circle:11px 13.5px;
+       /* ============================================ */
+
+       /* ========== BORDER RADIUS ========== */
+
+       --border-radius-xs: 6px;
+       --border-radius-sm: 10px;
+       --border-radius-md: 12px;
+       --border-radius-button: 30px;
+       --border-radius-cricle: 50%;
+
+       /* ============================================ */
+
+
+       /* ==============================
+                  W I D T H S 
+        ============================== */
+
+       --width-span-after: 30px;
+       --width-circle:34px;
+
+       /* ---------- LOGO WIDTH ---------- */
+
+       --logo-width-sm: 20px;
+       --logo-width-md: 120px;
+       --logo-width-lg: 150px;
+
+       /* ---------- ICON WIDTH ---------- */
+       --icon-width-xs: 10px;
+       --icon-width-sm: 12px;
+       --icon-width-md: 14px;
+       --icon-width-lg: 16px;
+       --icon-width-xl: 18px;
+       --icon-width-2xl: 22px;
+       --icon-width-3xl: 30px;
+       --icon-width-4xl: 100px;
+
+       /* ============================================ */
+
+       /* ==============================
+             L I N E - H E I G H T 
+        ============================== */
+
+       --line-height-h1: 40px;
+       --line-height-h2: 34px;
+       --line-height-h4: 24px;
+       --line-height-description-md: 22px;
+       --line-height-description-lg: 26px;
+
+       /* ============================================ */
+   }
+}
+
+/* ---------------------------------------------
+            L A P T O P - 1024 PX
+--------------------------------------------- */
+@media(min-width:768px) {
+   :root {
+       /* ========== FONT SIZE ========== */
+
+       --font-size-xs: 8px;
+       --font-size-sm: 12px;
+       --font-size-md: 14px;
+       --font-size-lg: 16px;
+       --font-size-lg-spc: 16px;
+       --font-size-xl: 18px;
+       --font-size-2xl: 20px;
+       --font-size-3xl: 22px;
+       --font-size-4xl: 32px;
+       --font-size-5xl: 40px;
+       --font-size-meter: 75px;
+       --font-size-button-small: 12px;
+       --font-size-button-medium: 14px;
+       --font-size-button-big: 16px;
+       --font-size-4-5xl: 40px;
+       /* ============================================ */
+
+       /* ========== GAP ========== */
+
+       --gap-auto: auto;
+       --gap-xs: 4px;
+       --gap-sm: 8px;
+       --gap-md: 12px;
+       --gap-lg: 14px;
+       --gap-xl: 24px;
+       --gap-2xl: 30px;
+       --gap-3xl: 42px;
+       --gap-4xl: 60px;
+       --gap-5xl: 80px;
+       --gap-card-md: 24px;
+       --gap-card-sm: 12px;
+       --gap-2-5xl: 24px;
+       /* ============================================ */
+
+       /* ========== PADDING ========== */
+
+       --padding-xs: 8px;
+       --padding-sm: 8px;
+       --padding-md: 14px;
+       --padding-lg: 16px;
+       --padding-xl: 18px;
+       --padding-2xl: 20px;
+       --padding-3xl: 34px;
+       --padding-4xl: 28px;
+       --padding-5xl: 30px;
+       --padding-6xl: 38px;
+       --padding-7xl: 60px;
+       --padding-8xl: 80px;
+       --padding-section: 100px;
+       --padding-header: 60px 20px;
+       --padding-section-header: 60px 80px;
+       --padding-extra-small: 8px 10px;
+       --padding-button-small: 6px 16px;
+       --padding-button-medium: 14px 20px;
+       --padding-input: 14px 20px 14px 36px;
+       --padding-button-big: 8px 28px;
+       --padding-card-big: 24px 30px;
+       --padding-small-footer:20px 60px;
+       --padding-footer-header: 80px 60px;
+       --padding-circle:13.5px 16.5px;
+       /* ============================================ */
+
+       /* ========== BORDER RADIUS ========== */
+
+       --border-radius-xs: 8px;
+       --border-radius-sm: 12px;
+       --border-radius-md: 14px;
+       --border-radius-button: 30px;
+       --border-radius-cricle: 50%;
+
+       /* ============================================ */
+
+
+       /* ==============================
+                  W I D T H S 
+        ============================== */
+
+       --width-span-after: 40px;
+       --width-circle:40px;
+       /* ---------- LOGO WIDTH ---------- */
+
+       --logo-width-sm: 24px;
+       --logo-width-md: 130px;
+       --logo-width-lg: 170px;
+
+       /* ---------- ICON WIDTH ---------- */
+       --icon-width-xs: 12px;
+       --icon-width-sm: 14px;
+       --icon-width-md: 16px;
+       --icon-width-lg: 18px;
+       --icon-width-xl: 20px;
+       --icon-width-2xl: 28px;
+       --icon-width-3xl: 40px;
+       --icon-width-4xl: 120px;
+
+       /* ============================================ */
+
+       /* ==============================
+             L I N E - H E I G H T 
+        ============================== */
+
+       --line-height-h1: 52px;
+       --line-height-h2: 42px;
+       --line-height-h4: 26px;
+       --line-height-description-md: 25px;
+       --line-height-description-lg: 30px;
+
+       /* ============================================ */
+   }
+}
+
+/* ---------------------------------------------
+           D E S K T O P - 1440 PX
+--------------------------------------------- */
+@media(min-width:1024px) {
+   :root {
+       /* ========== FONT SIZE ========== */
+
+       --font-size-xs: 12px;
+       --font-size-sm: 14px;
+       --font-size-md: 16px;
+       --font-size-lg: 18px;
+       --font-size-lg-spc: 18px;
+       --font-size-xl: 20px;
+       --font-size-2xl: 22px;
+       --font-size-3xl: 24px;
+       --font-size-4xl: 42px;
+       --font-size-4-5xl: 49px;
+       --font-size-5xl: 50px;
+       --font-size-meter: 90px;
+       --font-size-button-small: 14px;
+       --font-size-button-medium: 16px;
+       --font-size-button-big: 18px;
+
+       /* ============================================ */
+
+       /* ========== GAP ========== */
+
+       --gap-auto: auto;
+       --gap-xs: 6px;
+       --gap-sm: 10px;
+       --gap-md: 14px;
+       --gap-lg: 20px;
+       --gap-xl: 30px;
+       --gap-2xl: 40px;
+       --gap-3xl: 60px;
+       --gap-4xl: 80px;
+       --gap-5xl: 100px;
+       --gap-card-md: 30px;
+       --gap-card-sm: 14px;
+       --gap-2-5xl: 30px;
+       /* ============================================ */
+
+       /* ========== PADDING ========== */
+
+       --padding-xs: 8px;
+       --padding-sm: 10px;
+       --padding-md: 16px;
+       --padding-lg: 18px;
+       --padding-xl: 20px;
+       --padding-2xl: 24px;
+       --padding-3xl: 30px;
+       --padding-4xl: 36px;
+       --padding-5xl: 40px;
+       --padding-6xl: 50px;
+       --padding-7xling-3xl: 80px;
+       --padding-8xl: 100px;
+       --padding-section: 160px;
+       --padding-header: 80px 24px;
+       --padding-section-header: 80px 100px;
+       --padding-extra-small: 10px 12px;
+       --padding-button-small: 8px 18px;
+       --padding-button-medium: 16px 24px;
+      --padding-input: 16px 24px 16px 36px; 
+       --padding-button-big: 10px 36px;
+       --padding-card-big: 30px 40px;
+       --padding-small-footer:24px 80px;
+       --padding-footer-header: 100px 80px;
+       --padding-circle:18px 21px;
+       /* ============================================ */
+
+       /* ========== BORDER RADIUS ========== */
+
+       --border-radius-xs: 10px;
+       --border-radius-sm: 14px;
+       --border-radius-md: 16px;
+       --border-radius-button: 30px;
+       --border-radius-cricle: 50%;
+      
+
+       /* ============================================ */
+
+
+       /* ==============================
+                  W I D T H S 
+        ============================== */
+
+       --width-span-after: 50px;
+        --width-circle:50px;
+       /* ---------- LOGO WIDTH ---------- */
+
+       --logo-width-sm: 26px;
+       --logo-width-md: 160px;
+       --logo-width-lg: 190px;
+
+       /* ---------- ICON WIDTH ---------- */
+       --icon-width-xs: 14px;
+       --icon-width-sm: 16px;
+       --icon-width-md: 18px;
+       --icon-width-lg: 20px;
+       --icon-width-xl: 22px;
+       --icon-width-2xl: 32px;
+       --icon-width-3xl: 50px;
+       --icon-width-4xl: 150px;
+
+       /* ============================================ */
+
+       /* ==============================
+             L I N E - H E I G H T 
+        ============================== */
+
+       --line-height-h1: 60px;
+       --line-height-h2: 50px;
+       --line-height-h4: 28px;
+       --line-height-description-md: 16px;
+       --line-height-description-lg: 34px;
+
+       /* ============================================ */
+   }
+}

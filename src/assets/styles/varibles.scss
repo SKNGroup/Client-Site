@@ -1,0 +1,139 @@
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-md: 16px;
+$font-size-lg: 18px;
+$font-size-xl: 20px;
+$font-size-2xl: 22px;
+$font-size-3xl: 24px;
+$font-size-4xl: 42px;
+$font-size-5xl: 50px;
+$font-meter: 90px;
+
+// Gap
+$gap-auto: auto;
+$gap-xs: 6px;
+$gap-xs2:8px;
+$gap-sm: 10px;
+$gap-md: 14px;
+$gap-lg: 24px;
+$gap-xl: 30px;
+$gap-2xl: 40px;
+$gap-3xl: 60px;
+$gap-4xl: 80px;
+$gap-5xl: 100px;
+
+// Border Radius
+$border-radius-xs: 10px;
+$border-radius-sm: 14px;
+$border-radius-md: 16px;
+$border-radius-button: 30px;
+$border-radius-full: 50%;
+
+// Padding
+$padding-xs: 8px;
+$padding-sm: 10px;
+$padding-md: 16px;
+$padding-lg: 18px;
+$padding-xl: 20px;
+$padding-2xl: 24px;
+$padding-3xl: 30px;
+$padding-4xl: 36px;
+$padding-5xl: 40px;
+$padding-6xl: 50px;
+$padding-7xl: 80px;
+$padding-8xl: 100px;
+
+$padding-section: 160px;
+$padding-header: 24px 80px;
+$padding-header-md: 20px 60px;
+$padding-header-tb: 16px 34px;
+$padding-section-header: 80px 100px;
+$padding-extra-small: 10px 12px;
+$padding-button-small: 8px 18px;
+$padding-button-medium: 16px 24px;
+$padding-button-big: 10px 36px;
+$padding-big-card: 30px 40px;
+$padding-special:100px 0;
+
+// Logo Width
+$logo-width-sm: 26px;
+$logo-width-md: 160px;
+$logo-width-lg: 175px;
+$logo-width-xl: 190px;
+
+// Icon Width
+$icon-width-3xs: 12px;
+$icon-width-2xs: 14px;
+$icon-width-xs: 16px;
+$icon-width-sm: 18px;
+$icon-width-md: 20px;
+$icon-width-lg: 22px;
+$icon-width-xl: 32px;
+$icon-width-2xl: 40px;
+$icon-width-3xl: 50px;
+$icon-width-4xl: 80px;
+$icon-width-5xl: 120px;
+$icon-width-6xl: 150px;
+
+// Image Width
+$image-width-full: 100%;
+$image-width-half-container: 520px;
+$image-width-gallery: 360px;
+$image-width-card-big: 256px;
+$image-width-med: 222px;
+$image-width-lg: 360px;
+
+// 🎨 Color Palette
+$color-primary: #3472f9;
+$color-black: #000;
+$color-black-transparent: #00000099;
+$color-gray-dark: #d5d5d5;
+$color-gray-medium: #e8e8e8;
+$color-gray-light: #f7f7fa;
+$color-white: #fff;
+
+// Aspect Ratios
+$aspect-ratio-square: 1 / 1;
+$aspect-ratio-portrait: 3 / 4;
+$aspect-ratio-wide: 16 / 9;
+$aspect-ratio-tall: 9 / 16;
+
+// witdh
+$width-full:100%;
+$width-md:520px;
+$width-who:300px;
+$width-cart:540px;
+
+
+//shadows
+$header-shadow: 0px 8px 18px rgba(0, 0, 0, 0.15);
+
+//line-height
+$line-height-max:100%;
+$line-height-md:50px;
+$line-height-sm:26px;
+$line-height-sms:28px;
+
+//font-weight
+$font-weight-sm:200;
+$font-weight-md:400;
+$font-weight-mdx:500;
+$font-weight-xl:600;
+
+//display
+$display-flex:flex;
+$display-grid:grid;
+$justify-center:center;
+$align-center:center;
+$flex-direction:column;
+
+//font style
+$font-kanit:'Kanit',
+sans-serif;
+//fixed height
+$height:427px;
+$height-full:100%;
+//grid
+$grid:grid,
+
+//desktop

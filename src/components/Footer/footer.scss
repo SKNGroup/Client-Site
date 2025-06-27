@@ -1,0 +1,231 @@
+.section-container-content {
+    display: flex;
+    padding: var(--padding-footer-header);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    // max-width: 1440px;
+    // margin: 0 auto;
+    
+    .social-content {
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap-xl);
+        
+        width: 100%;
+
+        .sknLogo {
+            width: max-content;
+        }
+
+        .social-description {
+            font-weight: var(--font-weight-regular);
+            color: var(--color-black-overlay);
+            font-size: var(--font-size-md);
+            line-height: var(--line-height-description-lg);
+            @media(max-width:369px){
+                max-width: 190px;
+            }
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: var(--gap-2-5xl);
+
+            i {
+                font-size: var(--font-size-3xl);
+            }
+        }
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: var(--gap-xl); 
+
+        .contact-info-content {
+            display: flex;
+            gap: var(--gap-xl);
+            align-items: center;
+
+            i {
+                font-size: var(--font-size-4-5xl);
+                color: var(--color-black-overlay);
+                
+                
+            }
+             
+            &:nth-of-type(3) {
+                i {
+                    
+                    transform: translateX(4px); 
+                }
+            }
+            .contact-spans {
+                display: flex;
+                flex-direction: column;
+                gap: var(--gap-xs);
+
+                span:nth-child(1) {
+                    color: var(--color-black-overlay);
+                    font-weight: var(--font-weight-regular);
+                    font-size: var(--font-size-sm);
+                    line-height: 100%;
+                    letter-spacing: 5%;
+                }
+
+                span:nth-child(2) {
+                    font-weight: var(--font-weight-medium);
+                    font-size: var(--font-size-md);
+                    line-height: 100%;
+                    letter-spacing: 5%;
+                }
+            }
+        }
+    }
+
+    .company {
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap-lg);
+
+        .company-header {
+            display: flex;
+            gap: 2px;
+            font-weight: var(--font-weight-semi-bold);
+            font-size: var(--font-size-2xl);
+            line-height: 100%;
+            letter-spacing: 5%;
+            position: relative;
+            &::before{
+                  content: "";
+                  position: absolute;
+                  left: 0;
+                  bottom: -10px;
+                  height: 2px;
+                  width: 95%;
+                  background: linear-gradient(to right, #000, rgba(0, 0, 0, 0));
+            }
+        }
+
+        .company-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: var(--gap-xs);
+
+            button {
+                font-weight: var(--font-weight-regular);
+                font-size: var(--font-size-md);
+                line-height: var(--line-height-description-lg);
+                color: var(--color-black-overlay);
+                background: none;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.footer-container {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    @media(min-width:100px) {
+        background-image: url("../../assets/image/bg-footer-102.svg");
+        background-size: contain;
+        background-position: center 150px;
+    }
+    @media(min-width:450px) {
+        background-image: url("../../assets/image/bg-footer-501.svg");
+        background-size: contain;
+        background-position: center;
+    }
+    
+    @media(min-width:650px) {
+        background-image: url("../../assets/image/bg-footer-gap-500.svg");
+        background-position: center;
+        background-size: contain;
+    }
+
+
+    @media(min-width:768px) {
+        background-image: url("../../assets/image/bg-footer-700s.svg");
+        background-position: center;
+        background-size: contain;
+    }
+    @media(min-width:1024px) {
+        background-image: url("../../assets/image/bg-footer-1350.svg");
+        background-position: center;
+        background-size: contain;
+    }
+ @media(min-width:1440px){
+    background-image: url("../../assets/image/bg-footer-1500.svg");
+    background-position: center;
+    background-size: contain;
+ }
+
+ 
+
+
+    .footer-endpoint {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--color-black-footer);
+        padding: var(--padding-small-footer);
+        gap: var(--gap-sm);
+
+        p {
+            color: var(--color-white-overlay);
+            font-weight: var(--font-weight-regular);
+            font-size: var(--font-size-sm);
+            line-height: 100%;
+            letter-spacing: 5%;
+        }
+    }
+}
+.footer{
+   
+  
+ }
+// section-container-content
+/* ---------------------------------------------
+             T A B L E T - 768 PX
+--------------------------------------------- */
+@media (min-width: 370px) {}
+
+/* ---------------------------------------------
+             L A P T O P - 1024 PX
+--------------------------------------------- */
+@media (min-width: 768px) {
+    .section-container-content {
+        display: flex;
+        justify-content: space-between;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+
+        // background-image: url(../../assets/image/bg-footer.svg);
+        .social-content {
+            max-width: 356px;
+
+            .social-description {
+                font-size: var(--font-size-md);
+                line-height: var(--line-height-description-lg);
+
+            }
+        }
+    }
+}
+
+/* ---------------------------------------------
+            D E S K T O P - 1440 PX
+--------------------------------------------- */
+@media (min-width: 1024px) {}

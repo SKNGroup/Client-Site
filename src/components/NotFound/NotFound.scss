@@ -1,0 +1,45 @@
+
+.not-box{
+width: fit-content;
+@include margin;
+@include column;
+
+
+.size-bg{
+font-size: 90px;
+
+}
+
+.go-back{
+    transition: 0.5s;
+    &:hover{
+        @include HoverGoHome;
+    }
+    @include goHome;
+}
+ 
+
+
+}
+
+@media (max-width: 1024px) {
+    .not-box{
+        .size-bg{
+            font-size: 50px;
+        }
+    }
+  }
+
+  @media (max-width: 570px) {
+    .not-box{
+        .size-bg{
+            font-size: 22px;
+        }
+        .go-back{
+            &:hover{
+                @include HoverGoHome-sm
+            }
+            @include goHome-sm
+        }
+    }
+  }  

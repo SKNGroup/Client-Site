@@ -1,0 +1,222 @@
+// .section {
+//     display: flex;
+//     justify-content: center;
+
+//     .section-container {
+//         display: flex;
+//         flex-direction: column;
+//         gap: 60px;
+//         max-width: 1440px; //
+//         padding: 0 160px;
+//     }
+
+//     .section-header {
+//         width: 50%;
+//         display: flex;
+//         flex-direction: column;
+//         gap: 10px;
+
+//         .section-subtitle {
+//             position: relative;
+//             font-size: 14px;
+//             text-transform: uppercase;
+//             color: rgba(0, 0, 0, 0.6);
+//             font-weight: 400;
+//             width: max-content;
+
+//             &::after {
+//                 content: "";
+//                 position: absolute;
+//                 top: 50%;
+//                 left: 100%;
+//                 transform: translate(8px, -50%);
+//                 background: #3437f9;
+//                 width: 50px;
+//                 height: 2px;
+//             }
+//         }
+
+//         .section-title {
+//             font-size: 42px;
+//             line-height: 50px;
+//             font-weight: 600;
+//             color: #000;
+//         }
+//     }
+// }
+
+// .about-section {
+//     .section-content {
+//         width: 100%;
+//         display: flex;
+//         gap: 80px;
+//     }
+
+//     .text-content {
+//         width: 50%;
+//         display: flex;
+//         flex-direction: column;
+//         gap: 30px;
+//         color: rgba(0, 0, 0, 0.6);
+
+//         .description {
+//             line-height: 26px;
+//             font-size: 16px;
+//         }
+
+//         .block {
+//             display: flex;
+//             width: 100%;
+
+//             &:nth-of-type(1) {
+//                 justify-content: flex-end;
+//                 align-items: end;
+//             }
+
+//             .info-block {
+//                 width: 50%;
+//                 display: flex;
+//                 flex-direction: column;
+//                 gap: 14px;
+
+//                 .info-title {
+//                     font-size: 22px;
+//                     line-height: 28px;
+//                     font-weight: 500;
+//                     color: #000;
+//                 }
+
+//                 .info-text {
+//                     font-size: 16px;
+//                     line-height: 26px;
+//                     font-weight: 400;
+//                 }
+//             }
+//         }
+//     }
+
+//     .image-wrapper {
+//         width: 50%;
+//         display: flex;
+//         border-radius: 16px;
+//         overflow: hidden;
+//         aspect-ratio: 3/4;
+//         height: max-content;
+
+//         img {
+//             width: 100%;
+//             height: 100%;
+//             object-fit: cover;
+//             aspect-ratio: 3/4;
+//         }
+//     }
+// }
+
+
+
+/* ---------------------------------------------
+    G L O B A L - M O B I L E (MAX - 370 PX)
+--------------------------------------------- */
+
+.about-section {
+    .section-content {
+        width: var(--width-full);
+        display: flex;
+        flex-direction: column-reverse;
+        gap: var(--gap-4xl);
+
+        .text-content {
+            width: var(--width-full);
+            display: flex;
+            flex-direction: column;
+            gap: var(--gap-xl);
+            color: var(--color-black-overlay);
+
+            .description {
+                line-height: 26px;
+                font-size: var(--font-size-md);
+            }
+
+            .block {
+                display: flex;
+                width: var(--width-full);
+
+                &:nth-of-type(1) {
+                    justify-content: flex-end;
+                    align-items: end;
+                }
+
+                .info-block {
+                    width: var(--width-full);
+                    display: flex;
+                    flex-direction: column;
+                    gap: var(--gap-md);
+
+                    .info-title {
+                        font-size: var(--font-size-2xl);
+                        line-height: 28px;
+                        font-weight: var(--font-weight-medium);
+                        color: var(--color-black);
+                    }
+
+                    .info-text {
+                        font-size: var(--font-size-md);
+                        line-height: 26px;
+                        font-weight: var(--font-weight-regular);
+                    }
+                }
+            }
+        }
+
+        .image-wrapper {
+            width: var(--width-full);
+            display: flex;
+            border-radius: var(--border-radius-md);
+            overflow: hidden;
+            aspect-ratio: var(--aspect-ratio-portrait);
+            height: max-content;
+
+            img {
+                width: var(--width-full);
+                height: 100%;
+                object-fit: cover;
+                aspect-ratio: var(--aspect-ratio-portrait);
+            }
+        }
+    }
+}
+
+/* ---------------------------------------------
+             T A B L E T - 768 PX
+--------------------------------------------- */
+@media (min-width: 370px) {}
+
+/* ---------------------------------------------
+             L A P T O P - 1024 PX
+--------------------------------------------- */
+@media (min-width: 768px) {
+    .about-section {
+        .section-content {
+            flex-direction: row;
+
+            .text-content {
+                width: var(--width-half);
+
+                .block {
+                    .info-block {
+                        width: 80%;
+                    }
+                }
+            }
+
+            .image-wrapper {
+                width: var(--width-half);
+            }
+        }
+    }
+}
+
+/* ---------------------------------------------
+            D E S K T O P - 1440 PX
+--------------------------------------------- */
+@media (min-width: 1024px) {}

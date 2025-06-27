@@ -1,0 +1,91 @@
+{
+    "home": "HOME",
+    "projects": "PROJECTS",
+    "services": "SERVICES",
+    "partners": "PARTNERS",
+    "company": "ABOUT US",
+    "contact": "CONTACT",
+  
+    "h-sectiontwo": {
+      "subheading": "BUILDING TRUST SINCE 2005",
+      "title": "Experts In Construction Your Excellence.",
+      "description": "Our construction firm is dedicated to delivering quality and innovation in every project. With a team of experienced professionals, we combine modern technology with expert craftsmanship to build robust, elegant, and sustainable structures tailored to our clients’ needs. Our commitment to precision and excellence ensures that each project stands as a testament to our enduring dedication to superior construction practices.",
+      "whoWeAreTitle": "Who we are",
+      "whoWeAreText": "We are a team of experienced construction professionals committed to quality, innovation, and excellence in every project we deliver.",
+      "missionTitle": "Our Mission",
+      "missionText": "Our mission is to build high-quality, innovative, and sustainable structures that exceed client expectations while upholding integrity and excellence in every project."
+
+    },
+
+    "h-sectionthree":{
+      "ourheading":"OUR PPROJECT",
+      "ourtittle":"Services Tailored You",
+      "moreservice":"MORE SERVICE"
+    },
+
+    "service-cart": {
+      "card1": {
+        "title": "Architectural & Design Services",
+        "text": "From concept to reality—our expert architects and designers create innovative, functional, and aesthetically appealing structures tailored to your needs."
+      },
+      "card2": {
+        "title": "Commercial Construction",
+        "text": "We specialize in building high-quality residential and commercial spaces, ensuring durability, safety, and timeless designs."
+      },
+      "card3": {
+        "title": "Structural Engineering & Safety",
+        "text": "We prioritize structural integrity and safety, using advanced engineering techniques to build strong, resilient, and code-compliant structures."
+      },
+      "card4": {
+        "title": "Smart Building Solutions",
+        "text": "Incorporating eco-friendly materials and smart technologies, we design energy-efficient buildings that align with modern sustainability standards."
+      },
+      "card5": {
+        "title": "Renovation & Remodeling",
+        "text": "Transform your space with our expert renovation services—whether it’s a home, office, or commercial property, we bring new life to old structures."
+      },
+      "card6": {
+        "title": "Project Management & Consulting",
+        "text": "Our experienced project managers oversee every detail, from budgeting to execution, ensuring timely and cost-efficient project completion."
+      },
+      
+        "ABOUT": "ABOUT US",
+        "CONTACT": "CONTACT",
+        "PATNERS": "PATNERS",
+        "SERVICES": "SERVICES",
+        "FAQS": "FAQS"
+
+      
+        
+    },
+        "ourheading":"OUR HISTORY",
+         "ourtittle":"Building a Legacy of Excellence Since 2005.",
+
+         "WhyChooseUs":{
+           "ourheading":"WHY CHOOSE US",
+           "ourtittle":"Building Your Dreams"
+         },
+
+        "faq-subtitle": "HAVE QUESTIONS?",
+        "faq-title":"Frequently Asked Questions",
+        "why-title":"Building Your Dreams",
+        "our-project":"Our Projects",
+        "our-title":"Seen Our Working Clean Project",
+        "moore":"MORE PROJECT",
+        "back":"Go Back",
+        "OUR PARTNERS": "Our Partners",
+        "WHY CHOOSE US":"WHY CHOOSE US",
+        "view-more": "View More",
+ 
+         "homes": "Home",
+         "projectss": "Projects",
+         "servicess": "Services",
+         "partnerss": "Partners",
+         "companys": "About",
+         "contacts": "Contact",   
+         "faqs": "FAQS"
+
+   
+  }
+  
+  

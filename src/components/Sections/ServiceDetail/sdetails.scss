@@ -1,0 +1,340 @@
+.aboutContainer {
+    padding: var(--padding-footer-header);
+    background: var(--color-black-footer);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-xl);
+
+    h2 {
+        color: var(--color-white-overlay);
+        font-weight: var(--font-weight-semi-bold);
+        font-size: var(--font-size-5xl);
+        line-height: var(--line-height-h1);
+    }
+
+    p {
+        display: flex;
+        gap: var(--gap-md);
+    }
+
+    p span:nth-child(1) {
+        color: var(--color-about);
+        font-size: var(--font-size-md);
+        font-weight: var(--font-weight-regular);
+        line-height: 100%;
+        letter-spacing: 5%;
+    }
+
+    p span:nth-child(2) {
+        color: var(--color-white-overlay);
+        font-size: var(--font-size-md);
+        font-weight: var(--font-weight-regular);
+        line-height: 100%;
+        letter-spacing: 5%;
+    }
+
+    p span:nth-child(3) {
+        color: var(--color-white-overlay);
+        font-size: var(--font-size-md);
+        font-weight: var(--font-weight-regular);
+        line-height: 100%;
+        letter-spacing: 5%;
+    }
+
+    p span:nth-child(4) {
+        color: var(--color-white-overlay);
+        font-size: var(--font-size-md);
+        font-weight: var(--font-weight-regular);
+        line-height: 100%;
+        letter-spacing: 5%;
+    }
+
+    p span:nth-child(5) {
+        color: var(--color-white-overlay);
+        font-size: var(--font-size-md);
+        font-weight: var(--font-weight-regular);
+        line-height: 100%;
+        letter-spacing: 5%;
+    }
+}
+
+
+.project-des-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+    img {
+        width: var(--width-full);
+        height: max-content;
+        border-radius: 18px;
+       aspect-ratio: var(--aspect-ratio-landscape);
+        object-fit: cover;
+        @media(min-width: 400px) {
+            aspect-ratio: var(--aspect-ratio-wide);
+        }
+
+    }
+
+    .project-description {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        width: var(--width-full);
+        height: max-content;
+
+        h2 {
+            font-weight: var(--font-weight-semi-bold);
+            font-size: var(--font-size-4xl);
+            line-height: var(--line-height-h2);
+        }
+
+        p {
+            font-weight: var(--font-weight-regular);
+            font-size: var(--font-size-lg);
+            line-height: var(--line-height-description-lg);
+            color: var(--color-black-overlay);
+        }
+    }
+
+
+}
+
+
+
+/* ============================ */
+/* === GLOBAL CKEditor TAGS === */
+/* ============================ */
+.ck-content {
+    width: 100%;
+    color: var(--color-black);
+    background-color: var(--color-white);
+    font-size: var(--ckeditor-p-font-size);
+    line-height: var(--ckeditor-line-height);
+}
+
+.ck-content h1 {
+    font-size: var(--ckeditor-h1-font-size);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--ckeditor-line-height);
+    margin-bottom: var(--ckeditor-gap);
+}
+
+.ck-content h2 {
+    font-size: var(--ckeditor-h2-font-size);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--ckeditor-line-height);
+    margin-bottom: var(--ckeditor-gap);
+}
+
+.ck-content h3 {
+    font-size: var(--ckeditor-h3-font-size);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--ckeditor-line-height);
+    margin-bottom: var(--ckeditor-gap);
+}
+
+.ck-content h4 {
+    font-size: var(--ckeditor-h4-font-size);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--ckeditor-gap);
+}
+
+.ck-content h5 {
+    font-size: var(--ckeditor-h5-font-size);
+    font-weight: var(--font-weight-medium);
+    margin-bottom: var(--ckeditor-gap);
+}
+
+.ck-content h6 {
+    font-size: var(--ckeditor-h6-font-size);
+    font-weight: var(--font-weight-medium);
+    margin-bottom: var(--ckeditor-gap);
+}
+
+.ck-content p,
+.ck-content address,
+.ck-content summary,
+.ck-content blockquote,
+.ck-content details,
+.ck-content li,
+.ck-content span,
+.ck-content strong,
+.ck-content em,
+.ck-content u,
+.ck-content small,
+.ck-content abbr,
+.ck-content mark,
+.ck-content del,
+.ck-content ins,
+.ck-content var,
+.ck-content kbd,
+.ck-content samp,
+.ck-content cite {
+    font-size: var(--ckeditor-p-font-size);
+    line-height: var(--ckeditor-line-height);
+    margin-bottom: var(--ckeditor-gap);
+}
+
+.ck-content ul,
+.ck-content ol {
+    padding-left: var(--gap-3xl);
+    margin-bottom: var(--ckeditor-gap);
+}
+
+.ck-content li {
+    margin-bottom: var(--gap-xs);
+}
+
+.ck-content a {
+    color: var(--color-primary);
+    text-decoration: underline;
+    font-weight: var(--font-weight-medium);
+}
+
+.ck-content table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--ckeditor-table-font-size);
+    box-shadow: var(--box-shadow);
+    margin-bottom: var(--ckeditor-gap);
+}
+
+.ck-content th,
+.ck-content td {
+    padding: var(--padding-sm);
+    border: 1px solid var(--color-gray);
+    text-align: left;
+}
+
+.ck-content img,
+.ck-content video,
+.ck-content audio,
+.ck-content iframe {
+    max-width: 100%;
+    display: block;
+    margin: var(--gap-md) 0;
+    border-radius: var(--border-radius-sm);
+}
+
+.ck-content figcaption {
+    font-size: var(--ckeditor-caption-font-size);
+    color: var(--color-gray-stats);
+    margin-top: var(--gap-xs);
+    text-align: center;
+}
+
+.ck-content pre,
+.ck-content code {
+    font-family: monospace;
+    font-size: var(--ckeditor-code-font-size);
+    background-color: var(--color-gray-light);
+    padding: var(--padding-xs);
+    border-radius: var(--border-radius-xs);
+    margin-bottom: var(--ckeditor-gap);
+    display: block;
+    overflow-x: auto;
+}
+
+.ck-content form,
+.ck-content input,
+.ck-content select,
+.ck-content textarea,
+.ck-content label,
+.ck-content button {
+    font-size: var(--ckeditor-p-font-size);
+    padding: var(--padding-input);
+    margin-bottom: var(--gap-md);
+    border-radius: var(--border-radius-input);
+    border: 1px solid var(--color-gray-dark);
+    display: block;
+    width: 100%;
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+.ck-content hr {
+    border: none;
+    border-top: 1px solid var(--color-gray-dark);
+    margin: var(--gap-xl) 0;
+}
+
+.ck-content noscript {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: var(--padding-md);
+    display: block;
+    border-radius: var(--border-radius-xs);
+    margin-bottom: var(--gap-md);
+}
+
+
+:root {
+    --ckeditor-h1-font-size: var(--font-size-3xl);
+    --ckeditor-h2-font-size: var(--font-size-3xl);
+    --ckeditor-h3-font-size: var(--font-size-2xl);
+    --ckeditor-h4-font-size: var(--font-size-xl);
+    --ckeditor-h5-font-size: var(--font-size-lg);
+    --ckeditor-h6-font-size: var(--font-size-md);
+    --ckeditor-p-font-size: var(--font-size-lg);
+    --ckeditor-list-font-size: var(--font-size-lg);
+    --ckeditor-table-font-size: var(--font-size-md);
+    --ckeditor-code-font-size: var(--font-size-sm);
+    --ckeditor-caption-font-size: var(--font-size-sm);
+    --ckeditor-line-height: var(--line-height-description-md);
+    --ckeditor-gap: var(--gap-md);
+}
+
+@media (min-width: 370px) {
+    :root {
+        --ckeditor-h1-font-size: var(--font-size-4xl);
+        --ckeditor-h2-font-size: var(--font-size-3xl);
+        --ckeditor-h3-font-size: var(--font-size-2xl);
+        --ckeditor-h4-font-size: var(--font-size-xl);
+        --ckeditor-h5-font-size: var(--font-size-lg);
+        --ckeditor-h6-font-size: var(--font-size-md);
+        --ckeditor-p-font-size: var(--font-size-xl);
+        --ckeditor-table-font-size: var(--font-size-md);
+        --ckeditor-code-font-size: var(--font-size-md);
+        --ckeditor-caption-font-size: var(--font-size-sm);
+        --ckeditor-line-height: var(--line-height-description-md);
+        --ckeditor-gap: var(--gap-lg);
+    }
+}
+
+@media (min-width: 768px) {
+    :root {
+        --ckeditor-h1-font-size: var(--font-size-5xl);
+        --ckeditor-h2-font-size: var(--font-size-4xl);
+        --ckeditor-h3-font-size: var(--font-size-3xl);
+        --ckeditor-h4-font-size: var(--font-size-2xl);
+        --ckeditor-h5-font-size: var(--font-size-xl);
+        --ckeditor-h6-font-size: var(--font-size-lg);
+        --ckeditor-p-font-size: var(--font-size-2xl);
+        --ckeditor-table-font-size: var(--font-size-lg);
+        --ckeditor-code-font-size: var(--font-size-md);
+        --ckeditor-caption-font-size: var(--font-size-md);
+        --ckeditor-line-height: var(--line-height-description-lg);
+        --ckeditor-gap: var(--gap-xl);
+    }
+}
+
+@media (min-width: 1024px) {
+    :root {
+        --ckeditor-h1-font-size: var(--font-size-5xl);
+        --ckeditor-h2-font-size: var(--font-size-4xl);
+        --ckeditor-h3-font-size: var(--font-size-3xl);
+        --ckeditor-h4-font-size: var(--font-size-2xl);
+        --ckeditor-h5-font-size: var(--font-size-xl);
+        --ckeditor-h6-font-size: var(--font-size-lg);
+        --ckeditor-p-font-size: var(--font-size-3xl);
+        --ckeditor-table-font-size: var(--font-size-xl);
+        --ckeditor-code-font-size: var(--font-size-lg);
+        --ckeditor-caption-font-size: var(--font-size-lg);
+        --ckeditor-line-height: var(--line-height-description-lg);
+        --ckeditor-gap: var(--gap-2xl);
+    }
+}

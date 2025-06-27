@@ -1,0 +1,79 @@
+{
+  "home": "ANA SƏHİFƏ",
+  "projects": "LAYİHƏLƏR",
+  "services": "XİDMƏTLƏR",
+  "partners": "PARTNYORLAR",
+  "company": "HAQQIMIZDA",
+  "contact": "ƏLAQƏ",
+
+  "h-sectiontwo": {
+    "subheading": "2005-DƏN BƏRİ ETİBARI QURURUQ",
+    "title": "Tikintidə Mütəxəssislər, Sizin Mükəmməlliyiniz.",
+    "description": "Tikinti şirkətimiz hər layihədə keyfiyyət və yenilik təqdim etməyə sadiqdir. Təcrübəli mütəxəssislərdən ibarət komandamız müasir texnologiyanı peşəkar sənətkarlıqla birləşdirərək, müştərilərimizin ehtiyaclarına uyğun möhkəm, zərif və davamlı konstruksiyalar yaradır. Dəqiqlik və mükəmməlliyə olan bağlılığımız hər bir layihənin üstün tikinti təcrübələrinə sadiqliyimizin göstəricisi olmasına zəmanət verir.",
+    "whoWeAreTitle": "Biz kimik",
+    "whoWeAreText": "Biz hər layihədə keyfiyyət, yenilik və mükəmməlliyə sadiq olan təcrübəli tikinti mütəxəssislərindən ibarət komandayıq.",
+    "missionTitle": "Missiyamız",
+    "missionText": "Missiyamız müştəri gözləntilərini aşan, yüksək keyfiyyətli, yenilikçi və davamlı strukturlar yaratmaqdır. Bunu edərkən dürüstlük və mükəmməlliyi qoruyuruq."
+  },
+  "h-sectionthree": {
+    "ourheading": "LAYİHƏLƏRİMİZ",
+    "ourtittle": "Sizə Uyğun Xidmətlər",
+    "moreservice": "ƏTRAFLI XİDMƏT"
+  },
+  "service-cart": {
+    "card1": {
+      "title": "Memarlıq və Dizayn Xidmətləri",
+      "text": "Fikirdən gerçəkliyə — mütəxəssis memarlarımız və dizaynerlərimiz sizə uyğun innovativ, funksional və estetik cəhətdən cəlbedici strukturlar yaradır."
+    },
+    "card2": {
+      "title": "Ticarət Tikintisi",
+      "text": "Yüksək keyfiyyətli yaşayış və ticarət məkanlarının inşasında ixtisaslaşmışıq, davamlılıq, təhlükəsizlik və zamansız dizayn təmin edirik."
+    },
+    "card3": {
+      "title": "Struktur Mühəndisliyi və Təhlükəsizlik",
+      "text": "Möhkəm, davamlı və standartlara uyğun tikililər qurmaq üçün qabaqcıl mühəndislik üsullarından istifadə edərək struktur bütövlüyünə və təhlükəsizliyə üstünlük veririk."
+    },
+    "card4": {
+      "title": "Ağıllı Bina Həlləri",
+      "text": "Ekoloji cəhətdən təmiz materiallar və ağıllı texnologiyaları birləşdirərək, müasir davamlılıq standartlarına uyğun enerji səmərəli binalar layihələndiririk."
+    },
+    "card5": {
+      "title": "Təmir və Yenidənqurma",
+      "text": "İstər ev, istər ofis, istərsə də ticarət mülkiyyəti olsun — təmir xidmətlərimizlə məkanınızı yeniləyirik və ona yeni həyat veririk."
+    },
+    "card6": {
+      "title": "Layihə İdarəetməsi və Konsaltinq",
+      "text": "Təcrübəli layihə menecerlərimiz büdcədən icraya qədər hər detala nəzarət edərək vaxtında və səmərəli layihə tamamlanmasını təmin edirlər."
+    }
+  },
+   
+   "ourheading": "BİZİM TARİXİMİZ",
+
+   "ourtittle": "2005-ci ildən etibarən mükəmməllik irsi qururuq.",
+
+ 
+         "WhyChooseUs":{
+          "ourheading": "NİYƏ BİZİ SEÇMƏLİSİNİZ",
+          "ourtittle": "Arzularınızı Gerçəkləşdiririk"
+          } ,
+
+           "faq-subtitle": "SUALINIZ VAR?",
+         "faq-title": "Tez-tez verilən suallar",
+         "why-title": "Xəyallarınızı Gerçəkləşdirin",
+         "our-project": "Layihələrimiz",
+         "our-title": "Təmiz və səliqəli layihələrimizlə tanış olun",
+         "moore": "DAHA ÇOX LAYİHƏ",
+         "back": "Geri Qayıt",
+         
+         "WHY CHOOSE US": "NİYƏ BİZİ SEÇMƏLİSİNİZ",
+         "OUR PARTNERS":"Tərəfdaşlarımız",
+         "view-more": "Daha Çox Bax",
+         "homes": "Ana Səhifə",
+         "projectss": "Layihələr",
+         "servicess": "Xidmətlər",
+         "partnerss": "Partnyorlar",
+         "companys": "Haqqımızda",
+         "contacts": "Əlaqə",
+         "faqs": "Suallar"
+
+}

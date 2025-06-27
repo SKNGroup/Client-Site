@@ -1,0 +1,150 @@
+@import './varible.scss';
+@import './mixin.scss';
+@import './varibles.scss';
+@import '../../pages/Home/Home.scss';
+@import '../../pages/Contact/Contact.scss';
+@import'../../pages/About/About.scss';
+@import '../../pages/Partners/Partners.scss';
+@import '../../pages/Project/Project.scss';
+@import '../../pages/Services/Services.scss';
+@import '../../components/NotFound/NotFound.scss';
+@import '../../components/Navbar/Navbar.scss';
+@import '../../components/Sections/Home/Slider/Slider.scss';
+@import '../../components/Sections/Home/SectionAbout/SectionAbout.scss';
+@import '../.././components/Sections/Home/SectionOur/OurSection.scss';
+@import'../.././components/Sections/Home/home-card/ServiceCart.scss';
+@import'../../pages/Layout/layout.scss';
+@import '../../components/Sections/Home/homeModal/modal.scss';
+@import '../../pages/loadingPage/loading.scss';
+@import'../../components/Sections/Home/ProjectSlider/ProjectSlider.scss';
+@import '../../components/Sections/Home/sectionwhychoose/sectionwhychoose.scss';
+@import '../../components/Sections/Home/PartnerSlider/partnerslider.scss';
+@import '../../components/Footer/footer.scss';
+@import '../../pages/FAQs/faqs.scss';
+@import '../../components/Sections/Services/architechtur.scss';
+@import'../../components/Sections/About/AboutHeader/aboutheader.scss';
+@import'../../components/Sections/About/AboutDestricption/sectiondestricption.scss';
+@import'../../components/Sections/Contact/SectionContactNeed/contactneed.scss';
+@import '../../components/Sections/Faqs/faqs_body.scss';
+@import '../../components/Sections/Project/projectfilter.scss';
+@import '../../components/Sections/Project/projectcart.scss';
+@import '../../components/Sections/Partners/partnerbody.scss';
+@import '../../components/Sections/Project/filterbody.scss';
+@import '../../components/Sections/ServiceDetail/sdetails.scss';
+@import'../../components/Sections/Projectdetails/detail.scss';
+@import '../../components/Sections/ServiceDetail/ServiceSlider.scss';
+@import '../../components/Sections/Services/ServiceSpecis.scss';
+
+.container{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // list-style: none;
+    font-family: "Kanit", sans-serif;
+
+}
+
+/* ---------------------------------------------
+    G L O B A L - M O B I L E (MAX - 370 PX)
+--------------------------------------------- */
+.body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-5xl);
+}
+.section.projects {
+    background: #F7F7FA;
+    padding: var(--padding-8xl) 0;
+}
+
+
+// .section.projects-slider {
+//     background: #000;
+//     padding: var(--padding-8xl) 0;
+// }
+
+.section {
+    display: flex;
+    justify-content: center;
+
+    .section-container {
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap-3xl);
+        max-width: 1440px;
+        width: var(--width-full);
+        padding: 0 var(--padding-section);
+    }
+
+    .section-header {
+        width: var(--width-full);
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap-sm);
+
+        .section-subtitle {
+            position: relative;
+            font-size: var(--font-size-sm);
+            text-transform: uppercase;
+            color: var(--color-black-overlay);
+            font-weight: var(--font-weight-regular);
+            width: max-content;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 100%;
+                transform: translate(8px, -50%);
+                background: var(--color-primary);
+                width: var(--width-span-after);
+                height: 2px;
+            }
+        }
+
+        .section-title {
+            font-size: var(--font-size-4xl);
+            line-height: var(--line-height-h2);
+            font-weight: var(--font-weight-semi-bold);
+            color: var(--color-black);
+        }
+    }
+}
+
+.aboutContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* ---------------------------------------------
+             T A B L E T - 768 PX
+--------------------------------------------- */
+@media(min-width:370px) {}
+
+/* ---------------------------------------------
+             L A P T O P - 1024 PX
+--------------------------------------------- */
+@media(min-width:768px) {
+    .section {
+        .section-header {
+            width: var(--width-half);
+        }
+    }
+}
+
+/* ---------------------------------------------
+            D E S K T O P - 1440 PX
+--------------------------------------------- */
+@media(min-width:1024px) {}
+

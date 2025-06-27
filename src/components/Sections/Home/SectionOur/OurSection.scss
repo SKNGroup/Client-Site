@@ -1,0 +1,32 @@
+ .our-service-card-box{
+
+    width: var(--width-full);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: var(--gap-2xl);
+@media(max-width: 500px){
+   display: grid;
+   grid-template-columns: 1fr;
+}
+ }
+ 
+ .more-service-btn-box{
+   width: var(--width-full);
+   display: flex;
+   justify-content: center;
+   .more-serive-btn{
+  border-radius: var(--border-radius-button);
+  padding:var(--padding-button-big);
+  font-size: var(--font-size-lg);
+  line-height: 100%;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+  &:hover{
+   color: var(--color-black);
+   background-color: var(--color-white);
+  }
+   }
+ }

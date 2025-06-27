@@ -1,0 +1,109 @@
+.design_services {
+    display: flex;
+
+    gap: var(--gap-3xl);
+
+    @media(max-width: 370px) {
+        display: flex;
+        flex-direction: column;
+
+       
+    }
+
+    .design_title_dest {
+        
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap-md);
+        width: 70%;
+
+        .service_texture_header {
+            font-weight: var(--font-weight-medium);
+            font-size: var(--font-size-2xl);
+            line-height: var(--line-height-h4);
+        }
+
+        .service_texture_destricption {
+            font-weight: var(--font-weight-regular);
+            font-size: var(--font-size-md);
+            line-height: var(--line-height-description-lg);
+            color: var(--color-black-overlay);
+
+        }
+    }
+
+
+    .design_img_box {
+        width: 30%;
+        aspect-ratio: var(--aspect-ratio-landscape);
+       
+
+        .design_img {
+            width: 100%;
+            aspect-ratio: var(--aspect-ratio-landscape);
+            border-radius: var(--border-radius-sm);
+            object-fit: cover;
+
+
+        }
+    }
+
+}
+
+.design_reverse {
+    display: flex;
+   
+    gap: var(--gap-3xl);
+
+    @media(max-width: 370px) {
+        display: flex;
+        flex-direction: column;
+    }
+    @media(min-width: 371px) {
+        display: flex;
+        flex-direction: row-reverse;
+       
+            
+        
+    }
+    
+
+    .design_title_dest {
+
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap-md);
+        width: 70%;
+
+        .service_texture_header {
+            font-weight: var(--font-weight-medium);
+            font-size: var(--font-size-2xl);
+            line-height: var(--line-height-h4);
+        }
+
+        .service_texture_destricption {
+            font-weight: var(--font-weight-regular);
+            font-size: var(--font-size-md);
+            line-height: var(--line-height-description-lg);
+            color: var(--color-black-overlay);
+
+        }
+    }
+
+
+    .design_img_box {
+        width: 30%;
+        aspect-ratio: var(--aspect-ratio-landscape);
+
+
+        .design_img {
+            width: 100%;
+            aspect-ratio: var(--aspect-ratio-landscape);
+            border-radius: var(--border-radius-sm);
+            object-fit: cover;
+
+
+        }
+    }
+
+}
