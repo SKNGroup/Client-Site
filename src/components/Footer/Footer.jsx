@@ -103,8 +103,7 @@ export function Footer() {
 
         <div className="footer-endpoint">
           <p>Copyright © 2025 SKN Group</p>
-          <p>Developed By: <a href="http://webnova.az" style="text-decoration: none; color: inherit;">WebNova</a>
-</p>
+          <p>Developed By: <a href="http://webnova.az" style="text-decoration: none; color: inherit;">WebNova</a></p>
         </div>
       </div>
     </footer>
