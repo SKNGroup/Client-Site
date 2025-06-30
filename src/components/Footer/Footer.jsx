@@ -1,7 +1,7 @@
 import React,{useEffect,useState} from "react";
 import { useTranslation } from "react-i18next";
 import SKNlogo from "../../assets/image/Group21.png";
-import bgImage from "../../assets/image/bg-footer.svg"; 
+import bgImage from "../../assets/image/bg-footer.svg";
 import { useNavigate } from "react-router-dom";
 import { useContent, useInfo, useSocial } from "../../hooks/DynamicLang";
 export function Footer() {
