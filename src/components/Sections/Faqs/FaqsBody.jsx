@@ -8,9 +8,15 @@ export function FaqsBody() {
   const{t}=useTranslation()
   const [Data, setData] = useState("");
   const [activeIndex, setActiveIndex] = useState([]);
+
   useEffect(() => {
-    setData([...data?.$values]);
-  }, [data]);
+      if (Array.isArray(data?.$values)) {
+        setData([...data?.$values]);
+      } else {
+        setData([]);
+      }
+    }, [data]);
+  
   
 
   return (
