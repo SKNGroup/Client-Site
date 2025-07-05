@@ -74,6 +74,19 @@
          "partnerss": "Partnyorlar",
          "companys": "Haqqımızda",
          "contacts": "Əlaqə",
-         "faqs": "Suallar"
+         "faqs": "Suallar",
+         
+          "city": "Şəhər",
+          "country": "Ölkə",
+          "status": "Tikinti vəziyyəti",
+          "category": "Kateqoriya",
+          "area": "Ümumi Sahə",
+          "clear": "Filtri Təmizlə"
+        
+        
+
+         
+
+
 
 }

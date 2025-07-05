@@ -83,7 +83,13 @@
          "partnerss": "Partners",
          "companys": "About",
          "contacts": "Contact",   
-         "faqs": "FAQS"
+         "faqs": "FAQS",
+         "city":"City",
+         "country":"Country",
+         "status":"Construction Status",
+         "category":"Category",
+         "area":"Total Area",
+         "clear":"Clear Filter"
 
    
   }

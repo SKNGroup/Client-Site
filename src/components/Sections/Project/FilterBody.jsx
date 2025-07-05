@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import { useArea, useCategory, useCity, useCountry, useStatus } from "../../../hooks/DynamicLang";
-
+import { useTranslation } from "react-i18next";
 
 
 export  function FilterBody({setSendData,refetch,setSkip,setCheckbtn,setItem,setStart}){
+  const { t, i18n } = useTranslation();
  const{data:totalArea}=useArea(); 
 const{data:country}=useCountry();
 const{data:status}=useStatus();
@@ -125,7 +126,7 @@ setSendData((prew)=>({...prew,cityId: ctyId.length === 0 ? null : ctyId,countryI
               onClick={handleClick}
             >
                 <div className="filter_header_left">
-                <h4 className="filter_h_context">Country</h4>
+                <h4 className="filter_h_context">{t('country')}</h4>
                 </div>
                 <div className="filter_icon_box">
                 <span> <i className={`fa-solid fa-arrow-up icon-transition ${activeIndex.includes('1') ? "rotated" : ""}`}></i></span>
@@ -147,7 +148,7 @@ setSendData((prew)=>({...prew,cityId: ctyId.length === 0 ? null : ctyId,countryI
               onClick={handleClick}
             >
                 <div className="filter_header_left">
-                <h4 className="filter_h_context">City</h4>
+                <h4 className="filter_h_context">{t('city')}</h4>
                 </div>
                 <div className="filter_icon_box">
                 <span> <i className={`fa-solid fa-arrow-up icon-transition ${activeIndex.includes('2') ? "rotated" : ""}`}></i></span>
@@ -187,7 +188,7 @@ setSendData((prew)=>({...prew,cityId: ctyId.length === 0 ? null : ctyId,countryI
               onClick={handleClick}
             >
                 <div className="filter_header_left">
-                <h4 className="filter_h_context">Construction Status</h4>
+                <h4 className="filter_h_context">{t("status")}</h4>
                 </div>
                 <div className="filter_icon_box">
                 <span> <i className={`fa-solid fa-arrow-up icon-transition ${activeIndex.includes('3') ? "rotated" : ""}`}></i></span>
@@ -208,7 +209,7 @@ setSendData((prew)=>({...prew,cityId: ctyId.length === 0 ? null : ctyId,countryI
               onClick={handleClick}
             >
                 <div className="filter_header_left">
-                <h4 className="filter_h_context">Category</h4>
+                <h4 className="filter_h_context">{t('category')}</h4>
                 </div>
                 <div className="filter_icon_box">
                 <span> <i className={`fa-solid fa-arrow-up icon-transition ${activeIndex.includes('4') ? "rotated" : ""}`}></i></span>
@@ -229,7 +230,7 @@ setSendData((prew)=>({...prew,cityId: ctyId.length === 0 ? null : ctyId,countryI
               onClick={handleClick}
             >
                 <div className="filter_header_left">
-                <h4 className="filter_h_context">Total Area</h4>
+                <h4 className="filter_h_context">{t('area')}</h4>
                 </div>
                 <div className="filter_icon_box">
                 <span> <i className={`fa-solid fa-arrow-up icon-transition ${activeIndex.includes('5') ? "rotated" : ""}`}></i></span>
@@ -246,7 +247,7 @@ setSendData((prew)=>({...prew,cityId: ctyId.length === 0 ? null : ctyId,countryI
           </div>
 
           <div className="clear_filter">
-            <button className="clear_btn" onClick={handleDelete}><span>Clear Filter</span> <span>X</span></button>
+            <button className="clear_btn" onClick={handleDelete}><span>{t('clear')}</span> <span>X</span></button>
           </div>
         </div>
 
