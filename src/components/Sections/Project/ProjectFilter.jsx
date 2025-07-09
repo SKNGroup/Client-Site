@@ -105,7 +105,7 @@ useEffect(() => {
                   style={{ color: "#fafafa" }}
                 ></i>
               </span>
-              <span className="p_text">Filter</span>
+              <span className="p_text">{t('filter')}</span>
             </button>
           </div>)}
 
@@ -121,7 +121,7 @@ useEffect(() => {
                   style={{ color: "#fafafa" }}
                 ></i>
               </span>
-              <span className="p_text">Filter</span>
+              <span className="p_text">{t('filter')}</span>
             </button>
           </div>
           )}
@@ -132,7 +132,7 @@ useEffect(() => {
               <i className="fa fa-search search-icon"></i>
               <input
                 type="search"
-                placeholder="Search projects by keyword..."
+                placeholder={t('get')}
                 className="search-input"
                 onChange={(e)=>setSearch(e.target.value.toLowerCase())}
               />
@@ -143,7 +143,7 @@ useEffect(() => {
               <i className="fa fa-search search-icon"></i>
               <input
                 type="search"
-                placeholder="Search projects by keyword..."
+                placeholder={t('get')}
                 className="search-input"
                 onChange={(e)=>setSearch(e.target.value.toLowerCase())}
               />
@@ -151,7 +151,7 @@ useEffect(() => {
                )}
            {(isFalse&&isTrue)&&(<button className="closes" onClick={()=>setisTrue(false)}>X</button>)}
             <div className="search_btn_box">
-              <button className="search_btn" onClick={handleSend}>search</button>
+              <button className="search_btn" onClick={handleSend}>{t("search")}</button>
             </div>
           </div>
         </div>
@@ -177,7 +177,7 @@ useEffect(() => {
                 <>
                   <ProjectCart key={index} cart={cart} />
                   </>
-                ))):(<p className="warning">Məlumat tapılmadı!</p>)
+                ))):(<p className="warning">{t("not")}</p>)
               }
                
             </div>

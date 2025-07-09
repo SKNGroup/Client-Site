@@ -11,7 +11,7 @@ export function ServiceHeader(){
     <div className="aboutContainer">
       <h2>{t('servicess')}</h2>
       <p className="pages_special_hover">
-        <span onClick={()=>navigate(`/${i18n.language}/`)}>{t('homess')}</span> <span>/</span> <span>{t('servicess')}</span>
+        <span onClick={()=>navigate(`/${i18n.language}/`)}>{t('homes')}</span> <span>/</span> <span>{t('servicess')}</span>
         </p>
     </div>
   );

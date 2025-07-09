@@ -6,12 +6,12 @@
     gap: 20px;
     // max-width: 1440px;
     // margin: 0 auto;
-
+    
     .social-content {
         display: flex;
         flex-direction: column;
         gap: var(--gap-xl);
-
+        
         width: 100%;
 
         .sknLogo {
@@ -23,8 +23,7 @@
             color: var(--color-black-overlay);
             font-size: var(--font-size-md);
             line-height: var(--line-height-description-lg);
-
-            @media(max-width:369px) {
+            @media(max-width:369px){
                 max-width: 190px;
             }
         }
@@ -46,7 +45,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: var(--gap-xl);
+        gap: var(--gap-xl); 
 
         .contact-info-content {
             display: flex;
@@ -56,17 +55,16 @@
             i {
                 font-size: var(--font-size-4-5xl);
                 color: var(--color-black-overlay);
-
-
+                
+                
             }
-
+             
             &:nth-of-type(3) {
                 i {
-
-                    transform: translateX(4px);
+                    
+                    transform: translateX(4px); 
                 }
             }
-
             .contact-spans {
                 display: flex;
                 flex-direction: column;
@@ -103,15 +101,14 @@
             line-height: 100%;
             letter-spacing: 5%;
             position: relative;
-
-            &::before {
-                content: "";
-                position: absolute;
-                left: 0;
-                bottom: -10px;
-                height: 2px;
-                width: 95%;
-                background: linear-gradient(to right, #000, rgba(0, 0, 0, 0));
+            &::before{
+                  content: "";
+                  position: absolute;
+                  left: 0;
+                  bottom: -10px;
+                  height: 2px;
+                  width: 95%;
+                  background: linear-gradient(to right, #000, rgba(0, 0, 0, 0));
             }
         }
 
@@ -145,13 +142,12 @@
         background-size: contain;
         background-position: center 150px;
     }
-
     @media(min-width:450px) {
         background-image: url("../../assets/image/bg-footer-501.svg");
         background-size: contain;
         background-position: center;
     }
-
+    
     @media(min-width:650px) {
         background-image: url("../../assets/image/bg-footer-gap-500.svg");
         background-position: center;
@@ -164,20 +160,18 @@
         background-position: center;
         background-size: contain;
     }
-
     @media(min-width:1024px) {
         background-image: url("../../assets/image/bg-footer-1350.svg");
         background-position: center;
         background-size: contain;
     }
+ @media(min-width:1440px){
+    background-image: url("../../assets/image/bg-footer-1500.svg");
+    background-position: center;
+    background-size: contain;
+ }
 
-    @media(min-width:1440px) {
-        background-image: url("../../assets/image/bg-footer-1500.svg");
-        background-position: center;
-        background-size: contain;
-    }
-
-
+ 
 
 
     .footer-endpoint {
@@ -194,21 +188,13 @@
             font-size: var(--font-size-sm);
             line-height: 100%;
             letter-spacing: 5%;
-
-            a {
-                color: var(--color-white-overlay);
-                font-weight: var(--font-weight-regular);
-                font-size: var(--font-size-sm);
-                line-height: 100%;
-                letter-spacing: 5%;
-                text-decoration: none;
-            }
         }
     }
 }
-
-.footer {}
-
+.footer{
+   
+  
+ }
 // section-container-content
 /* ---------------------------------------------
              T A B L E T - 768 PX

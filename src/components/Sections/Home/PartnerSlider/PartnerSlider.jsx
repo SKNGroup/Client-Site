@@ -40,6 +40,7 @@ export function PartnerSlider() {
         className="swipers"
         modules={[ Autoplay]}
         loop
+        loopFillGroupWithBlank={true}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         pagination={{ clickable: true }}
         spaceBetween={30}

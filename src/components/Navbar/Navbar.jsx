@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useIdStore } from "../Sections/Project/idFunc";
 import { useNavigate } from "react-router-dom";
 import logo from "../../assets/image/Group21.png";
 import { useState } from "react";
@@ -9,12 +10,17 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { headerScroll, languageOptions } from "./handlefunc";
 import { resize, resizeMobile } from "./ModalFunc";
 import { HeaderModal } from "./../Sections/Home/homeModal/Modal";
+import {  useStatus } from "../../hooks/DynamicLang";
 library.add(faBars);
 
 
 
 export function Navbar() {
-const [headerClass, setHeaderClass] = useState(false);
+  const setId = useIdStore(state => state.setId);
+  const {data:status}=useStatus();
+  const [stschck, setStschck] = useState(false);
+  const [stsData, setStsData] = useState(null);
+  const [headerClass, setHeaderClass] = useState(false);
   const [scounter, setScounter] = useState(0);
   const [isActivate, setIsActivate] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -22,6 +28,18 @@ const [headerClass, setHeaderClass] = useState(false);
   const navigate = useNavigate();
   const { t, i18n } = useTranslation();
   const [Changed, setChanged] = useState(i18n.language);
+  console.log(stschck);
+  
+  useEffect(()=>{
+if (status) {
+ 
+  
+setStsData(status?.$values)
+
+ 
+}
+  },[status]);
+
 
   function handleChanged(e) {
     const newLang = e.target.value;
@@ -135,15 +153,34 @@ const [headerClass, setHeaderClass] = useState(false);
                     {t("home")}
                   </button>
                 </li>
-                <li className="list-items">
+                <li className="list-items spec_relative" onMouseOver={()=>setStschck(true)} onMouseOut={()=>setStschck(false)}>
+                 
+                
                   <button
                     className="header-button"
+                    
                     onClick={() => {
                       navigate(`/${Changed}/project`);
                     }}
                   >
-                    {t("projects")}
-                  </button>
+                    {t("projects")} 
+                  </button> 
+                  {/* sss */}
+                  {stsData&&(
+                    <div className={`status_data ${stschck?'ck_open':'ck_close'}`} onMouseOver={()=>setStschck(true)}>
+                      <ul>
+                       {stsData.map((el)=>(
+                        <li key={el?.id} onClick={() => {
+                          setId(el.id);
+                          navigate(`/${Changed}/project`);
+                        }}>
+                          {el.name}
+                        </li>
+                       ))} 
+                      </ul>
+                      
+                    </div>
+                  )}
                 </li>
                 <li className="list-items">
                   <button
@@ -224,6 +261,7 @@ const [headerClass, setHeaderClass] = useState(false);
               </div>
             </div>
           )}
+
         </div>
       </header>
     </>

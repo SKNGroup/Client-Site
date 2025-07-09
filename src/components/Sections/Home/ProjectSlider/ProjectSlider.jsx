@@ -1,3 +1,5 @@
+
+
 import React, { useState, useEffect, useRef, useTransition } from "react";
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from "react-router-dom";
@@ -229,7 +231,7 @@ export function ProjectSlider({
   }, [activeIndex, current.percent]); // Aktiv slayd və ya faiz dəyişdikdə yenilə
 
   // Kifayət qədər məlumat yoxdursa, heç nə göstərmə
-  if (!projectsData.length || projectsData.length < current.slides) {
+  if (!projectsData.length) {
     return null;
   }
 

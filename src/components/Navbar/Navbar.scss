@@ -152,3 +152,33 @@
         
     }
 }
+
+.spec_relative{
+position: relative;
+  .status_data{
+position: absolute;
+top: 100%;
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 36px;
+    background-color: #EEEEEE;
+
+    li{
+        padding: 10px;
+        cursor: pointer;
+        color: #00000099;
+        &:hover{
+            color: black;
+        }
+    }
+}
+}  
+}
+.ck_open{
+    display: block;
+}
+.ck_close{
+    display: none;
+}

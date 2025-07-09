@@ -81,9 +81,14 @@
           "status": "Tikinti vəziyyəti",
           "category": "Kateqoriya",
           "area": "Ümumi Sahə",
-          "clear": "Filtri Təmizlə"
+          "clear": "Filtri Təmizlə",
+
+          "filter":"Filtr",
+          "search":"Axtar",
+          "not": "Məlumat tapılmadı",
+          "get": "Layihələri açar sözlə axtarın . . ."
         
-        
+          
 
          
 

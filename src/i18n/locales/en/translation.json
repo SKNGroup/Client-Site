@@ -89,7 +89,14 @@
          "status":"Construction Status",
          "category":"Category",
          "area":"Total Area",
-         "clear":"Clear Filter"
+         "clear":"Clear Filter",
+
+         "filter":"Filter",
+         "search":"Search",
+         "not": "No information found",
+         "get": "Search projects by keyword . . ."
+
+
 
    
   }

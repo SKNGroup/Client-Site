@@ -2,10 +2,11 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import { useArea, useCategory, useCity, useCountry, useStatus } from "../../../hooks/DynamicLang";
 import { useTranslation } from "react-i18next";
-
+import { useIdStore } from "./idFunc";
 
 export  function FilterBody({setSendData,refetch,setSkip,setCheckbtn,setItem,setStart}){
   const { t, i18n } = useTranslation();
+  const sendId=useIdStore(state => state.id);
  const{data:totalArea}=useArea(); 
 const{data:country}=useCountry();
 const{data:status}=useStatus();
@@ -26,6 +27,12 @@ const [area, setArea] = useState({
     min:'',
     max:''
 });
+
+useEffect(()=>{
+if(sendId){
+setStId(sendId);
+}
+},[sendId])
 const handleDelete=()=>{
     setCtId(null);
     setCtyId([]);
